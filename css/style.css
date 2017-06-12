@@ -1,0 +1,157 @@
+:root {
+  --background-color: #424242;
+  --box-shadow: 0 0 32px 0 rgba(0,0,0, 0.25);
+  --tab-radius: 8px;
+  --text-strong: rgba(0,0,0, 0.50);
+  --text-stronger: rgba(0,0,0, 0.75);
+  --text-strongest: #424242;
+}
+
+* {
+  user-select: none;
+}
+
+.dark {
+  --text-strong: rgba(255,255,255, 0.50);
+  --text-stronger: rgba(255,255,255, 0.75);
+  --text-strongest: white;
+  --background-color: #424242;
+  color: var(--text-stronger);
+}
+
+.bright {
+  --text-strong: rgba(0,0,0, 0.50);
+  --text-stronger: rgba(0,0,0, 0.75);
+  --text-strongest: #424242;
+  --background-color: #fafafa;
+  color: var(--text-stronger);
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  background: var(--background-color);
+}
+
+.block {
+  box-shadow: var(--box-shadow);
+  background: var(--background-color);
+}
+
+i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-strong);
+}
+
+.mainMenu {
+  width: 192px;
+}
+
+.mainMenu-tab {
+  cursor: pointer;
+  padding: 12px;
+} .mainMenu-tab:hover, .mainMenu-tab:hover i {
+  color: var(--text-strongest);
+} .mainMenu-tab.-active {
+  background: rgba(0,0,0, 0.10);
+} .mainMenu-tab.-active, .mainMenu-tab.-active i {
+  color: var(--text-strongest);
+}
+
+.mainContent {
+  background: var(--background-color);
+}
+
+.tab {
+  cursor: pointer;
+}
+
+.block > .header > .tabs {
+  padding: 0 32px;
+  overflow-y: hidden;
+}
+
+.block > .header > .tabs > .tab {
+  width: 100%;
+  max-width: 160px;
+  height: 36px;
+  padding: 0 16px;
+  transform-style: preserve-3d;
+  transform: perspective(3px);
+} .block > .header > .tabs > .tab:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -8px;
+  right: -8px;
+  bottom: 0;
+  border-top-left-radius: var(--tab-radius);
+  border-top-right-radius: var(--tab-radius);
+  background: var(--background-color);
+  box-shadow: var(--box-shadow);
+  transform-origin: center bottom;
+  transform: rotate3d(1,0,0, 1deg);
+} .block > .header > .tabs > .tab.-active, .block > .header > .tabs > .tab.-active i {
+  color: var(--text-strongest);
+} .block > .header > .tabs > .tab:hover, .block > .header > .tabs > .tab:hover i {
+  color: var(--text-strongest);
+}
+
+.block > .content {
+  background: var(--background-color);
+  box-shadow: var(--box-shadow);
+}
+
+.languageSelect {
+  height: 48px;
+}
+
+.tree {
+  
+}
+
+.tree .branch {
+}
+
+.tree .branch .item {
+  cursor: pointer;
+} .tree .branch .item.-active {
+  background: rgba(0,0,0, 0.10);
+} .tree .branch .item.-active, .tree .branch .item.-active i {
+  color: var(--text-strongest);
+} .tree .branch .item:hover, .tree .branch .item:hover i {
+  color: var(--text-strongest);
+}
+
+.tree .branch i {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+
+.tree .branch .branch i:first-of-type {
+  margin-right: calc((40px + 18px) / 2);
+}
+
+.tree .branch .branch .branch i:first-of-type {
+  margin-right: calc(40px + 18px);
+}
+
+.tree .branch .branch .branch .branch i:first-of-type {
+  margin-right: calc((40px + 18px) / 2 * 3);
+}
+
+.tree .branch .branch .branch .branch .branch i:first-of-type {
+  margin-right: calc((40px + 18px) / 2 * 4);
+}
+
+.tree .branch .branch .branch .branch .branch .branch i:first-of-type {
+  margin-right: calc((40px + 18px) / 2 * 5);
+}
+
+.tree .branch .branch .branch .branch .branch .branch .branch i:first-of-type {
+  margin-right: calc((40px + 18px) / 2 * 6);
+}

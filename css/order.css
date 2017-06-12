@@ -1,0 +1,31 @@
+.mainMenu {
+  z-index: 100;
+}
+
+.block > .header > .tabs > .tab.-active {
+  z-index: 11;
+} 
+
+.block > .content {
+  z-index: 10;
+}
+
+.block > .header > .tabs > .tab.-active ~ .tab:nth-last-of-type(1) {
+  z-index: 1;
+} .block > .header > .tabs > .tab.-active ~ .tab:nth-last-of-type(2) {
+  z-index: 2;
+} .block > .header > .tabs > .tab.-active ~ .tab:nth-last-of-type(3) {
+  z-index: 3;
+} .block > .header > .tabs > .tab.-active ~ .tab:nth-last-of-type(4) {
+  z-index: 4;
+} .block > .header > .tabs > .tab.-active ~ .tab:nth-last-of-type(5) {
+  z-index: 5;
+} .block > .header > .tabs > .tab.-active ~ .tab:nth-last-of-type(6) {
+  z-index: 6;
+} .block > .header > .tabs > .tab.-active ~ .tab:nth-last-of-type(7) {
+  z-index: 7;
+} .block > .header > .tabs > .tab.-active ~ .tab:nth-last-of-type(8) {
+  z-index: 8;
+} .block > .header > .tabs > .tab.-active ~ .tab:nth-last-of-type(9) {
+  z-index: 9;
+}
