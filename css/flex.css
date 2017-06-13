@@ -748,52 +748,52 @@ input[type="file"] {
 }
 
 [data-cell-spacing^="2px"] {
-  width: calc(100% + 4px);
-  margin: -2px !important;
+  width: calc(100% + 2px);
+  margin: -1px !important;
 } [data-cell-spacing*="2px"] > * {
-  padding: 2px;
+  padding: 1px;
 }
 
 [data-cell-spacing^="4px"] {
-  width: calc(100% + 8px);
-  margin: -4px !important;
+  width: calc(100% + 4px);
+  margin: -2px !important;
 } [data-cell-spacing*="4px"] > * {
-  padding: 4px;
+  padding: 2px;
 }
 
 [data-cell-spacing^="8px"] {
-  width: calc(100% + 16px);
-  margin: -8px !important;
+  width: calc(100% + 8px);
+  margin: -4px !important;
 } [data-cell-spacing*="8px"] > * {
-  padding: 8px;
+  padding: 4px;
 }
 
 [data-cell-spacing^="12px"] {
-  width: calc(100% + 24px);
-  margin: -12px !important;
+  width: calc(100% + 12px);
+  margin: -6px !important;
 } [data-cell-spacing*="12px"] > * {
-  padding: 12px;
+  padding: 6px;
 }
 
 [data-cell-spacing^="16px"] {
-  width: calc(100% + 32px);
-  margin: -16px !important;
+  width: calc(100% + 16px);
+  margin: -8px !important;
 } [data-cell-spacing*="16px"] > * {
-  padding: 16px;
+  padding: 8px;
 }
 
 [data-cell-spacing^="24px"] {
-  width: calc(100% + 48px);
-  margin: -24px !important;
+  width: calc(100% + 24px);
+  margin: -12px !important;
 } [data-cell-spacing*="24px"] > * {
-  padding: 24px;
+  padding: 12px;
 }
 
 [data-cell-spacing^="32px"] {
-  width: calc(100% + 64px);
-  margin: -32px !important;
+  width: calc(100% + 32px);
+  margin: -16px !important;
 } [data-cell-spacing*="32px"] > * {
-  padding: 32px;
+  padding: 16px;
 }
 
 
@@ -1212,52 +1212,52 @@ input[type="file"] {
   }
 
   [data-cell-spacing*="xs: 2px"] {
-    width: calc(100% + 4px);
-    margin: -2px !important;
+    width: calc(100% + 2px);
+    margin: -1px !important;
   } [data-cell-spacing*="xs: 2px"] > * {
-    padding: 2px;
+    padding: 1px;
   }
 
   [data-cell-spacing*="xs: 4px"] {
-    width: calc(100% + 8px);
-    margin: -4px !important;
+    width: calc(100% + 4px);
+    margin: -2px !important;
   } [data-cell-spacing*="xs: 4px"] > * {
-    padding: 4px;
+    padding: 2px;
   }
 
   [data-cell-spacing*="xs: 8px"] {
-    width: calc(100% + 16px);
-    margin: -8px !important;
+    width: calc(100% + 8px);
+    margin: -4px !important;
   } [data-cell-spacing*="xs: 8px"] > * {
-    padding: 8px;
+    padding: 4px;
   }
 
   [data-cell-spacing*="xs: 12px"] {
-    width: calc(100% + 24px);
-    margin: -12px !important;
+    width: calc(100% + 12px);
+    margin: -6px !important;
   } [data-cell-spacing*="xs: 12px"] > * {
-    padding: 12px;
+    padding: 6px;
   }
 
   [data-cell-spacing*="xs: 16px"] {
-    width: calc(100% + 32px);
-    margin: -16px !important;
+    width: calc(100% + 16px);
+    margin: -8px !important;
   } [data-cell-spacing*="xs: 16px"] > * {
-    padding: 16px;
+    padding: 8px;
   }
 
   [data-cell-spacing*="xs: 24px"] {
-    width: calc(100% + 48px);
-    margin: -24px !important;
+    width: calc(100% + 24px);
+    margin: -12px !important;
   } [data-cell-spacing*="xs: 24px"] > * {
-    padding: 24px;
+    padding: 12px;
   }
 
   [data-cell-spacing*="xs: 32px"] {
-    width: calc(100% + 64px);
-    margin: -32px !important;
+    width: calc(100% + 32px);
+    margin: -16px !important;
   } [data-cell-spacing*="xs: 32px"] > * {
-    padding: 32px;
+    padding: 16px;
   }
   
   [data-wrap*="xs: wrap"] {
@@ -1656,52 +1656,52 @@ input[type="file"] {
   }
 
   [data-cell-spacing*="sm: 2px"] {
-    width: calc(100% + 4px);
-    margin: -2px !important;
+    width: calc(100% + 2px);
+    margin: -1px !important;
   } [data-cell-spacing*="sm: 2px"] > * {
-    padding: 2px;
+    padding: 1px;
   }
 
   [data-cell-spacing*="sm: 4px"] {
-    width: calc(100% + 8px);
-    margin: -4px !important;
+    width: calc(100% + 4px);
+    margin: -2px !important;
   } [data-cell-spacing*="sm: 4px"] > * {
-    padding: 4px;
+    padding: 2px;
   }
 
   [data-cell-spacing*="sm: 8px"] {
-    width: calc(100% + 16px);
-    margin: -8px !important;
+    width: calc(100% + 8px);
+    margin: -4px !important;
   } [data-cell-spacing*="sm: 8px"] > * {
-    padding: 8px;
+    padding: 4px;
   }
 
   [data-cell-spacing*="sm: 12px"] {
-    width: calc(100% + 24px);
-    margin: -12px !important;
+    width: calc(100% + 12px);
+    margin: -6px !important;
   } [data-cell-spacing*="sm: 12px"] > * {
-    padding: 12px;
+    padding: 6px;
   }
 
   [data-cell-spacing*="sm: 16px"] {
-    width: calc(100% + 32px);
-    margin: -16px !important;
+    width: calc(100% + 16px);
+    margin: -8px !important;
   } [data-cell-spacing*="sm: 16px"] > * {
-    padding: 16px;
+    padding: 8px;
   }
 
   [data-cell-spacing*="sm: 24px"] {
-    width: calc(100% + 48px);
-    margin: -24px !important;
+    width: calc(100% + 24px);
+    margin: -12px !important;
   } [data-cell-spacing*="sm: 24px"] > * {
-    padding: 24px;
+    padding: 12px;
   }
 
   [data-cell-spacing*="sm: 32px"] {
-    width: calc(100% + 64px);
-    margin: -32px !important;
+    width: calc(100% + 32px);
+    margin: -16px !important;
   } [data-cell-spacing*="sm: 32px"] > * {
-    padding: 32px;
+    padding: 16px;
   }
   
   [data-wrap*="sm: wrap"] {
@@ -2100,52 +2100,52 @@ input[type="file"] {
   }
 
   [data-cell-spacing*="md: 2px"] {
-    width: calc(100% + 4px);
-    margin: -2px !important;
+    width: calc(100% + 2px);
+    margin: -1px !important;
   } [data-cell-spacing*="md: 2px"] > * {
-    padding: 2px;
+    padding: 1px;
   }
 
   [data-cell-spacing*="md: 4px"] {
-    width: calc(100% + 8px);
-    margin: -4px !important;
+    width: calc(100% + 4px);
+    margin: -2px !important;
   } [data-cell-spacing*="md: 4px"] > * {
-    padding: 4px;
+    padding: 2px;
   }
 
   [data-cell-spacing*="md: 8px"] {
-    width: calc(100% + 16px);
-    margin: -8px !important;
+    width: calc(100% + 8px);
+    margin: -4px !important;
   } [data-cell-spacing*="md: 8px"] > * {
-    padding: 8px;
+    padding: 4px;
   }
 
   [data-cell-spacing*="md: 12px"] {
-    width: calc(100% + 24px);
-    margin: -12px !important;
+    width: calc(100% + 12px);
+    margin: -6px !important;
   } [data-cell-spacing*="md: 12px"] > * {
-    padding: 12px;
+    padding: 6px;
   }
 
   [data-cell-spacing*="md: 16px"] {
-    width: calc(100% + 32px);
-    margin: -16px !important;
+    width: calc(100% + 16px);
+    margin: -8px !important;
   } [data-cell-spacing*="md: 16px"] > * {
-    padding: 16px;
+    padding: 8px;
   }
 
   [data-cell-spacing*="md: 24px"] {
-    width: calc(100% + 48px);
-    margin: -24px !important;
+    width: calc(100% + 24px);
+    margin: -12px !important;
   } [data-cell-spacing*="md: 24px"] > * {
-    padding: 24px;
+    padding: 12px;
   }
 
   [data-cell-spacing*="md: 32px"] {
-    width: calc(100% + 64px);
-    margin: -32px !important;
+    width: calc(100% + 32px);
+    margin: -16px !important;
   } [data-cell-spacing*="md: 32px"] > * {
-    padding: 32px;
+    padding: 16px;
   }
   
   [data-wrap*="md: wrap"] {
@@ -2556,52 +2556,52 @@ input[type="file"] {
   }
 
   [data-cell-spacing*="lg: 2px"] {
-    width: calc(100% + 4px);
-    margin: -2px !important;
+    width: calc(100% + 2px);
+    margin: -1px !important;
   } [data-cell-spacing*="lg: 2px"] > * {
-    padding: 2px;
+    padding: 1px;
   }
 
   [data-cell-spacing*="lg: 4px"] {
-    width: calc(100% + 8px);
-    margin: -4px !important;
+    width: calc(100% + 4px);
+    margin: -2px !important;
   } [data-cell-spacing*="lg: 4px"] > * {
-    padding: 4px;
+    padding: 2px;
   }
 
   [data-cell-spacing*="lg: 8px"] {
-    width: calc(100% + 16px);
-    margin: -8px !important;
+    width: calc(100% + 8px);
+    margin: -4px !important;
   } [data-cell-spacing*="lg: 8px"] > * {
-    padding: 8px;
+    padding: 4px;
   }
 
   [data-cell-spacing*="lg: 12px"] {
-    width: calc(100% + 24px);
-    margin: -12px !important;
+    width: calc(100% + 12px);
+    margin: -6px !important;
   } [data-cell-spacing*="lg: 12px"] > * {
-    padding: 12px;
+    padding: 6px;
   }
 
   [data-cell-spacing*="lg: 16px"] {
-    width: calc(100% + 32px);
-    margin: -16px !important;
+    width: calc(100% + 16px);
+    margin: -8px !important;
   } [data-cell-spacing*="lg: 16px"] > * {
-    padding: 16px;
+    padding: 8px;
   }
 
   [data-cell-spacing*="lg: 24px"] {
-    width: calc(100% + 48px);
-    margin: -24px !important;
+    width: calc(100% + 24px);
+    margin: -12px !important;
   } [data-cell-spacing*="lg: 24px"] > * {
-    padding: 24px;
+    padding: 12px;
   }
 
   [data-cell-spacing*="lg: 32px"] {
-    width: calc(100% + 64px);
-    margin: -32px !important;
+    width: calc(100% + 32px);
+    margin: -16px !important;
   } [data-cell-spacing*="lg: 32px"] > * {
-    padding: 32px;
+    padding: 16px;
   }
   
   [data-wrap*="lg: wrap"] {

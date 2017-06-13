@@ -5,16 +5,20 @@
   --text-strong: rgba(0,0,0, 0.50);
   --text-stronger: rgba(0,0,0, 0.75);
   --text-strongest: #424242;
-}
-
-* {
-  user-select: none;
+  --text-weak: rgba(0,0,0, 0.25);
+  --text-weaker: rgba(0,0,0, 0.15);
+  --text-weakest: rgba(0,0,0, 0.10);
+  --scrollbar-width: 4px;
+  --scrollbar-margin: 6px;
 }
 
 .dark {
   --text-strong: rgba(255,255,255, 0.50);
   --text-stronger: rgba(255,255,255, 0.75);
   --text-strongest: white;
+  --text-weak: rgba(255,255,255, 0.25);
+  --text-weaker: rgba(255,255,255, 0.15);
+  --text-weakest: rgba(255,255,255, 0.10);
   --background-color: #424242;
   color: var(--text-stronger);
 }
@@ -23,8 +27,28 @@
   --text-strong: rgba(0,0,0, 0.50);
   --text-stronger: rgba(0,0,0, 0.75);
   --text-strongest: #424242;
+  --text-weak: rgba(0,0,0, 0.25);
+  --text-weaker: rgba(0,0,0, 0.15);
+  --text-weakest: rgba(0,0,0, 0.10);
   --background-color: #fafafa;
   color: var(--text-stronger);
+}
+
+::-webkit-scrollbar {
+  width: calc(2 * var(--scrollbar-margin) + var(--scrollbar-width));
+  background: none;
+} ::-webkit-scrollbar-thumb {
+  border-radius: calc(var(--scrollbar-width) / 2 + var(--scrollbar-margin));
+  border: var(--scrollbar-margin) solid transparent;
+  background: var(--text-weaker);
+  background-clip: content-box;
+} ::-webkit-scrollbar-thumb:hover {
+  background: var(--text-weak);
+  background-clip: content-box;
+}
+
+* {
+  user-select: none;
 }
 
 html {
@@ -34,9 +58,19 @@ html {
   background: var(--background-color);
 }
 
+body {
+  height: 100vh;
+  max-height: 100vh;
+}
+
 .block {
+  overflow-y: overlay;
   box-shadow: var(--box-shadow);
   background: var(--background-color);
+}
+
+.window {
+  overflow-y: overlay;
 }
 
 i {
@@ -110,19 +144,19 @@ i {
 }
 
 .tree {
-  
+  width: 320px;
 }
 
 .tree .branch {
 }
 
-.tree .branch .item {
+.tree .branch .row {
   cursor: pointer;
-} .tree .branch .item.-active {
+} .tree .branch .row.-active {
   background: rgba(0,0,0, 0.10);
-} .tree .branch .item.-active, .tree .branch .item.-active i {
+} .tree .branch .row.-active, .tree .branch .row.-active .icon {
   color: var(--text-strongest);
-} .tree .branch .item:hover, .tree .branch .item:hover i {
+} .tree .branch .row:hover, .tree .branch .row:hover .icon {
   color: var(--text-strongest);
 }
 
@@ -132,26 +166,34 @@ i {
   font-size: 18px;
 }
 
-.tree .branch .branch i:first-of-type {
-  margin-right: calc((40px + 18px) / 2);
+.tree .-disabled .mdi-eye, .tree .-disabled ~ .branch .mdi-eye {
+  color: var(--text-weakest)
 }
 
-.tree .branch .branch .branch i:first-of-type {
-  margin-right: calc(40px + 18px);
+.tree .category.-collapsed ~ .branch {
+  display: none;
 }
 
-.tree .branch .branch .branch .branch i:first-of-type {
-  margin-right: calc((40px + 18px) / 2 * 3);
+.tree .branch .branch .item:first-of-type {
+  padding-left: calc((40px + 18px) / 2);
 }
 
-.tree .branch .branch .branch .branch .branch i:first-of-type {
-  margin-right: calc((40px + 18px) / 2 * 4);
+.tree .branch .branch .branch .item:first-of-type {
+  padding-left: calc(40px + 18px);
 }
 
-.tree .branch .branch .branch .branch .branch .branch i:first-of-type {
-  margin-right: calc((40px + 18px) / 2 * 5);
+.tree .branch .branch .branch .branch .item:first-of-type {
+  padding-left: calc((40px + 18px) / 2 * 3);
 }
 
-.tree .branch .branch .branch .branch .branch .branch .branch i:first-of-type {
-  margin-right: calc((40px + 18px) / 2 * 6);
+.tree .branch .branch .branch .branch .branch .item:first-of-type {
+  padding-left: calc((40px + 18px) / 2 * 4);
+}
+
+.tree .branch .branch .branch .branch .branch .branch .item:first-of-type {
+  padding-left: calc((40px + 18px) / 2 * 5);
+}
+
+.tree .branch .branch .branch .branch .branch .branch .branch .item:first-of-type {
+  padding-left: calc((40px + 18px) / 2 * 6);
 }

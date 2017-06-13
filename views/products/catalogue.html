@@ -1,48 +1,235 @@
-<div class="flex-grow" data-display="row" data-cell-spacing="8px">
-  <div>
-    <div data-display="col" data-padding="16px">
-      <div class="tree">
-        <div class="branch" data-display="col">
-          <div class="item category" data-display="row" data-align-items="center" data-trigger="hover">
-            <i class="mdi mdi-eye"></i>
-            <i class="mdi mdi-folder"></i>
-            <div class="flex-grow">Смартфоны</div>
-            <i class="mdi mdi-pencil" data-reaction="opacity"></i>
-          </div>
+<div data-display="col" class="flex-grow" data-padding="16px">
+  <div class="flex-grow" data-display="row" data-cell-spacing="16px">
+    <div data-display="col" class="window">
+      <div data-display="col" data-padding="16px">
+        <div class="tree">
           <div class="branch" data-display="col">
-            <div class="item category" data-display="row" data-align-items="center" data-trigger="hover">
+            <div class="row category -collapsed" data-display="row" data-align-items="center" data-trigger="hover">
               <i class="mdi mdi-eye"></i>
-              <i class="mdi mdi-folder"></i>
-              <div class="flex-grow">Apple</div>
-              <i class="mdi mdi-pencil" data-reaction="opacity"></i>
+              <div data-display="row" class="item flex-items-center flex-grow">
+                <i class="icon mdi mdi-folder"></i>
+                <div class="flex-grow">Смартфоны</div>
+              </div>
+              <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
             </div>
             <div class="branch" data-display="col">
-              <div class="item product -active" data-display="row" data-align-items="center" data-trigger="hover">
+              <div class="row category -collapsed -disabled" data-display="row" data-align-items="center" data-trigger="hover">
                 <i class="mdi mdi-eye"></i>
-                <i class="mdi mdi-cube-outline"></i>
-                <div class="flex-grow">iPhone 6</div>
-                <i class="mdi mdi-pencil" data-reaction="opacity"></i>
+                <div data-display="row" class="item flex-items-center flex-grow">
+                  <i class="icon mdi mdi-folder"></i>
+                  <div class="flex-grow">Apple</div>
+                </div>
+                <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
               </div>
-              <div class="item product" data-display="row" data-align-items="center" data-trigger="hover">
+              <div class="branch" data-display="col">
+                <div class="row product" data-display="row" data-align-items="center" data-trigger="hover">
+                  <i class="mdi mdi-eye"></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-cube-outline"></i>
+                    <div class="flex-grow">iPhone 6</div>
+                  </div>
+                  <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+                </div>
+                <div class="row product" data-display="row" data-align-items="center" data-trigger="hover">
+                  <i class="mdi mdi-eye"></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-cube-outline"></i>
+                    <div class="flex-grow">iPhone 6 Plus</div>
+                  </div>
+                  <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+                </div>
+                <div class="row product -active" data-display="row" data-align-items="center" data-trigger="hover">
+                  <i class="mdi mdi-eye"></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-cube-outline"></i>
+                    <div class="flex-grow">iPhone 7</div>
+                  </div>
+                  <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+                </div>
+                <div class="row product" data-display="row" data-align-items="center" data-trigger="hover">
+                  <i class="mdi mdi-eye"></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-cube-outline"></i>
+                    <div class="flex-grow">iPhone 7 Plus</div>
+                  </div>
+                  <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+                </div>
+                <div class="row" data-display="row" data-align-items="center">
+                  <i></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-plus"></i>
+                    <div class="flex-grow">Создать товар</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="branch" data-display="col">
+              <div class="row category -collapsed" data-display="row" data-align-items="center" data-trigger="hover">
                 <i class="mdi mdi-eye"></i>
-                <i class="mdi mdi-cube-outline"></i>
-                <div class="flex-grow">iPhone 6 Plus</div>
-                <i class="mdi mdi-pencil" data-reaction="opacity"></i>
+                <div data-display="row" class="item flex-items-center flex-grow">
+                  <i class="icon mdi mdi-folder"></i>
+                  <div class="flex-grow">Google</div>
+                </div>
+                <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
               </div>
-              <div class="item product" data-display="row" data-align-items="center">
+              <div class="branch" data-display="col">
+                <div class="row product" data-display="row" data-align-items="center" data-trigger="hover">
+                  <i class="mdi mdi-eye"></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-cube-outline"></i>
+                    <div class="flex-grow">Nexus 5</div>
+                  </div>
+                  <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+                </div>
+                <div class="row product" data-display="row" data-align-items="center" data-trigger="hover">
+                  <i class="mdi mdi-eye"></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-cube-outline"></i>
+                    <div class="flex-grow">Nexus 5X</div>
+                  </div>
+                  <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+                </div>
+                <div class="row product" data-display="row" data-align-items="center" data-trigger="hover">
+                  <i class="mdi mdi-eye"></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-cube-outline"></i>
+                    <div class="flex-grow">Nexus 6P</div>
+                  </div>
+                  <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+                </div>
+                <div class="row product" data-display="row" data-align-items="center" data-trigger="hover">
+                  <i class="mdi mdi-eye"></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-cube-outline"></i>
+                    <div class="flex-grow">Pixel</div>
+                  </div>
+                  <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+                </div>
+                <div class="row product" data-display="row" data-align-items="center" data-trigger="hover">
+                  <i class="mdi mdi-eye"></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-cube-outline"></i>
+                    <div class="flex-grow">Pixel XL</div>
+                  </div>
+                  <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+                </div>
+                <div class="row" data-display="row" data-align-items="center">
+                  <i></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-plus"></i>
+                    <div class="flex-grow">Создать товар</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="branch" data-display="col">
+              <div class="row" data-display="row" data-align-items="center">
                 <i></i>
-                <i class="mdi mdi-plus"></i>
-                <div class="flex-grow">Add product</div>
+                <div data-display="row" class="item flex-items-center flex-grow">
+                  <i class="icon mdi mdi-folder-plus"></i>
+                  <div class="flex-grow">Создать</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="branch" data-display="col">
+            <div class="row category -collapsed" data-display="row" data-align-items="center" data-trigger="hover">
+              <i class="mdi mdi-eye"></i>
+              <div data-display="row" class="item flex-items-center flex-grow">
+                <i class="icon mdi mdi-folder"></i>
+                <div class="flex-grow">Ноутбуки</div>
+              </div>
+              <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+            </div>
+            <div class="branch" data-display="col">
+              <div class="row category -collapsed" data-display="row" data-align-items="center" data-trigger="hover">
+                <i class="mdi mdi-eye"></i>
+                <div data-display="row" class="item flex-items-center flex-grow">
+                  <i class="icon mdi mdi-folder"></i>
+                  <div class="flex-grow">Apple</div>
+                </div>
+                <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+              </div>
+              <div class="branch" data-display="col">
+                <div class="row product" data-display="row" data-align-items="center" data-trigger="hover">
+                  <i class="mdi mdi-eye"></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-cube-outline"></i>
+                    <div class="flex-grow">MacBook</div>
+                  </div>
+                  <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+                </div>
+                <div class="row product -disabled" data-display="row" data-align-items="center" data-trigger="hover">
+                  <i class="mdi mdi-eye"></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-cube-outline"></i>
+                    <div class="flex-grow">MacBook Air</div>
+                  </div>
+                  <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+                </div>
+                <div class="row product" data-display="row" data-align-items="center" data-trigger="hover">
+                  <i class="mdi mdi-eye"></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-cube-outline"></i>
+                    <div class="flex-grow">MacBook Pro</div>
+                  </div>
+                  <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+                </div>
+                <div class="row" data-display="row" data-align-items="center">
+                  <i></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-plus"></i>
+                    <div class="flex-grow">Создать товар</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="branch" data-display="col">
+              <div class="row category -collapsed" data-display="row" data-align-items="center" data-trigger="hover">
+                <i class="mdi mdi-eye"></i>
+                <div data-display="row" class="item flex-items-center flex-grow">
+                  <i class="icon mdi mdi-folder"></i>
+                  <div class="flex-grow">Google</div>
+                </div>
+                <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+              </div>
+              <div class="branch" data-display="col">
+                <div class="row product" data-display="row" data-align-items="center" data-trigger="hover">
+                  <i class="mdi mdi-eye"></i>
+                  <div data-display="row" class="item flex-items-center flex-grow">
+                    <i class="icon mdi mdi-cube-outline"></i>
+                    <div class="flex-grow">Chromebook</div>
+                  </div>
+                  <i class="mdi mdi-drag mdi-24px" data-reaction="opacity"></i>
+                </div>
+              </div>
+            </div>
+            <div class="branch" data-display="col">
+              <div class="row" data-display="row" data-align-items="center">
+                <i></i>
+                <div data-display="row" class="item flex-items-center flex-grow">
+                  <i class="icon mdi mdi-folder-plus"></i>
+                  <div class="flex-grow">Создать</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="branch" data-display="col">
+            <div class="row" data-display="row" data-align-items="center">
+              <i></i>
+              <div data-display="row" class="item flex-items-center flex-grow">
+                <i class="icon mdi mdi-folder-plus"></i>
+                <div class="flex-grow">Создать</div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="flex-grow" data-display="col">
-    <div class="block bright flex-grow" data-padding="32px">
-      <div>iPhone 6</div>
+    <div class="flex-grow" data-display="col">
+      <div data-display="col" class="block bright flex-grow" data-padding="32px">
+        <div>iPhone 6</div>
+      </div>
     </div>
   </div>
 </div>
