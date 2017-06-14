@@ -24,52 +24,54 @@
       $('#' + id).addClass('-active').siblings().removeClass('-active');
     }
   </script>
-  <body class="dark" data-display="row" onload="importModule('products', 'mainContent'); activateTab('linkTo-products'); importModule('products-catalogue', 'productsContent'); activateTab('linkTo-catalogue');">
-    <div class="block mainMenu" data-display="col">
-      <div class="mainMenu-tab">
-        <div data-display="row" data-cell-spacing="8px" data-align-items="center">
-          <i class="mdi mdi-24px mdi-store"></i>
-          <div class="line">Витрина</div>
+  <body class="dark" data-display="row" onload="importModule('design', 'mainContent'); activateTab('linkTo-design');">
+    <div class="menu" data-display="row">
+      <div data-display="col" class="mainMenu block flex-grow">
+        <div class="mainMenu-tab">
+          <div data-display="row" data-cell-spacing="12px" data-align-items="center">
+            <i class="mdi mdi-24px mdi-store"></i>
+            <div class="line">Витрина</div>
+          </div>
         </div>
-      </div>
-      <div class="mainMenu-tab">
-        <div data-display="row" data-cell-spacing="8px" data-align-items="center">
-          <i class="mdi mdi-24px mdi-format-list-bulleted"></i>
-          <div class="line">Заказы</div>
+        <div class="mainMenu-tab">
+          <div data-display="row" data-cell-spacing="12px" data-align-items="center">
+            <i class="mdi mdi-24px mdi-format-list-bulleted"></i>
+            <div class="line">Заказы</div>
+          </div>
         </div>
-      </div>
-      <div class="mainMenu-tab" id="linkTo-products" onclick="importModule('products', 'mainContent'); activateTab('linkTo-products'); importModule('products-catalogue', 'productsContent'); activateTab('linkTo-catalogue');">
-        <div data-display="row" data-cell-spacing="8px" data-align-items="center">
-          <i class="mdi mdi-24px mdi-cube-outline"></i>
-          <div class="line">Товары</div>
+        <div class="mainMenu-tab" id="linkTo-products" onclick="importModule('products', 'mainContent'); activateTab('linkTo-products'); importModule('products-catalogue', 'productsContent'); activateTab('linkTo-catalogue');">
+          <div data-display="row" data-cell-spacing="12px" data-align-items="center">
+            <i class="mdi mdi-24px mdi-cube-outline"></i>
+            <div class="line">Товары</div>
+          </div>
         </div>
-      </div>
-      <div class="mainMenu-tab -active" id="linkTo-design" onclick="importModule('design', 'mainContent'); activateTab('linkTo-design');">
-        <div data-display="row" data-cell-spacing="8px" data-align-items="center">
-          <i class="mdi mdi-24px mdi-brush"></i>
-          <div class="line">Дизайн</div>
+        <div class="mainMenu-tab -active" id="linkTo-design" onclick="importModule('design', 'mainContent'); activateTab('linkTo-design');">
+          <div data-display="row" data-cell-spacing="12px" data-align-items="center">
+            <i class="mdi mdi-24px mdi-brush"></i>
+            <div class="line">Дизайн</div>
+          </div>
         </div>
-      </div>
-      <div class="mainMenu-tab">
-        <div data-display="row" data-cell-spacing="8px" data-align-items="center">
-          <i class="mdi mdi-24px mdi-web"></i>
-          <div class="line">Языки</div>
+        <div class="mainMenu-tab">
+          <div data-display="row" data-cell-spacing="12px" data-align-items="center">
+            <i class="mdi mdi-24px mdi-web"></i>
+            <div class="line">Языки</div>
+          </div>
         </div>
-      </div>
-      <div class="mainMenu-tab">
-        <div data-display="row" data-cell-spacing="8px" data-align-items="center">
-          <i class="mdi mdi-24px mdi-credit-card"></i>
-          <div class="line">Оплата</div>
+        <div class="mainMenu-tab">
+          <div data-display="row" data-cell-spacing="12px" data-align-items="center">
+            <i class="mdi mdi-24px mdi-credit-card"></i>
+            <div class="line">Оплата</div>
+          </div>
         </div>
-      </div>
-      <div class="mainMenu-tab">
-        <div data-display="row" data-cell-spacing="8px" data-align-items="center">
-          <i class="mdi mdi-24px mdi-cube-outline"></i>
-          <div class="line">Доставка</div>
+        <div class="mainMenu-tab">
+          <div data-display="row" data-cell-spacing="12px" data-align-items="center">
+            <i class="mdi mdi-24px mdi-cube-outline"></i>
+            <div class="line">Доставка</div>
+          </div>
         </div>
       </div>
     </div>
-    <div id="mainContent" class="mainContent flex-grow" data-display="col">
+    <div id="mainContent" class="mainContent flex-grow flex-shrink" data-display="col">
       
     </div>
   </body>

@@ -49,6 +49,7 @@
 
 * {
   user-select: none;
+  min-width: 0;
 }
 
 html {
@@ -64,24 +65,32 @@ body {
 }
 
 .block {
+  position: relative;
   overflow-y: overlay;
   box-shadow: var(--box-shadow);
   background: var(--background-color);
+  -webkit-transition: all 0.25s ease-in-out;
 }
 
 .window {
   overflow-y: overlay;
 }
 
-i {
+i {/*
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
   color: var(--text-strong);
 }
 
+.menu {
+  width: 240px;
+}
+
 .mainMenu {
-  width: 192px;
+  flex-shrink: 1;
+  min-width: 48px;
+  width: 240px;
 }
 
 .mainMenu-tab {
@@ -167,7 +176,7 @@ i {
 }
 
 .tree .-disabled .mdi-eye, .tree .-disabled ~ .branch .mdi-eye {
-  color: var(--text-weakest)
+  color: var(--text-weakest);
 }
 
 .tree .category.-collapsed ~ .branch {
